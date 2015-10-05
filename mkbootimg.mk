@@ -5,15 +5,10 @@ LOCAL_PATH := $(call my-dir)
 ## parts of the build environment
 
 ## Imported from the original makefile...
+
 KERNEL_CONFIG := $(KERNEL_OUT)/.config
 KERNEL_ZIMG = $(KERNEL_OUT)/arch/arm/boot/zImage
 DTC = $(KERNEL_OUT)/scripts/dtc/dtc
-
-
-## Build and run dtbtool
-DTBTOOL := $(TARGET_KERNEL_SOURCE)/tools/dtbtool/dtbtool
-$(DTBTOOL):
-	make -C $(TARGET_KERNEL_SOURCE)/tools/dtbtool
 
 INSTALLED_DTIMAGE_TARGET := $(PRODUCT_OUT)/dt.img
 
