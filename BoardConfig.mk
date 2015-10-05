@@ -39,7 +39,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/mkbootimg.mk
 TARGET_KERNEL_SOURCE := kernel/samsung/j5lte
-TARGET_KERNEL_CONFIG := msm8916-mini_defconfig
+TARGET_KERNEL_CONFIG := msm8916_sec_j5lte_eur_defconfig
 
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_RECOVERY_QCOM_RTC_FIX := true
